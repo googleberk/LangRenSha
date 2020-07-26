@@ -2,17 +2,17 @@ public class RandomAssignment {
 
 
 
-    public void assign(Player p, int d){
+    public void assign(int i, Player p, int d){
         if (d == 0){
-            p = new CunMin();
+            p = new CunMin(i);
         }else if (d == 1){
-            p = new LangRen();
+            p = new LangRen(i);
         }else if (d == 2){
-            p = new NvWu();
+            p = new NvWu(i);
         } else if (d == 3){
-            p = new LieRen();
+            p = new LieRen(i);
         } else if (d == 4){
-            p = new YuYanJia();
+            p = new YuYanJia(i);
         } else{
             System.out.println("Something wrong!");
         }
